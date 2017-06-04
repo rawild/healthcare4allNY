@@ -12,10 +12,8 @@ class App extends Component {
   var endDate = new Date(2017,5,21,22,0,0,0)
   return  (<div className="App">
     <div className="App-header">
-    <div className="interlude">
-      <Textfit mode="single">
+    <div className="interlude">    
         We have only
-      </Textfit>
     </div>
       <Countdown targetDate={endDate}/>
       <div className="interlude">

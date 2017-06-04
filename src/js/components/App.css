@@ -30,16 +30,16 @@
 .countdown{
   margin: auto;
   text-align: center;
-  font-size: 40pt;
+  font-size: 100pt;
   padding-bottom: 10px;
 }
 .time {
   margin: auto;
   background-color: #09153b;
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 180px;
   padding: 10px;
-  margin: 5px;
+  margin: 20px;
   color: rgb(232, 171, 53);
   border-radius: 10px;
   display: inline-block;
@@ -48,7 +48,7 @@
   font-size: 15pt;
 }
 .interlude {
-  font-size: 20pt;
+  font-size: 25pt;
   padding: 20px;
 }
 .title {
