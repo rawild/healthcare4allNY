@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react'
 
-export default class NewsletterForm extends Component {
+export default class MediaForm extends Component {
   render() {
       return(
         <div className="mc-form" id="mc_embed_signup">
@@ -16,6 +16,7 @@ export default class NewsletterForm extends Component {
              <div className="mce-special"><input type="text" name="b_cb31eb89d2773d05d965b8254_7b63ece6ae" tabIndex="-1" value=""/></div>
           </div>
           </form>
+          <div className="fb-like" data-href="http://healthcare4allny.org" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
       </div>
     )
   }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Countdown from './Countdown'
 import './App.css';
-import NewsletterForm from './NewsletterForm'
+import MediaForm from './MediaForm'
 import { Textfit } from 'react-textfit';
 import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
 
@@ -13,7 +13,7 @@ class App extends Component {
   var endDate = new Date(2017,5,21,22,0,0,0)
   return  (
     <div className="App">
-      <NewsletterForm />
+      <MediaForm />
       <div className="Section-1">
         <div className="starter">    
           We only have
