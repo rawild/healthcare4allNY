@@ -136,6 +136,7 @@ button:hover {
   margin-top: 30px;
   transition: all 0.3s ease 0s;
   opacity: 1;
+  margin: 30px;
 }
 
 
