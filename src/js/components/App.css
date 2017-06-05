@@ -34,8 +34,7 @@
   font-size: 25pt;
   padding: 20px;
   padding-left: 5%;
-  max-width: 80%;
-  width: 800px;
+  max-width: 90%;
   text-align: left;
 }
 .countdown{
@@ -86,6 +85,7 @@
 .validate {
   display: inline;
   white-space: nowrap;
+  float: right;
 }
 .mc-form-label {
   font-size: 24px;
@@ -122,10 +122,20 @@ input::placeholder {
   font-size: 10pt;
 }
 
+.mce-special {
+  position: absolute;
+  left: -5000px;
+  aria-hidden: true;
+}
 button:hover {
   opacity: .65;
 } 
-
+.fb-like {
+  padding: 8px;
+  background-color: white;
+  float: left;
+  border-radius: 10px;
+}
 .button-primary {
   padding: 20px;
   font-size: 20pt;
@@ -149,11 +159,7 @@ button:hover {
     height: 30px;
 }  
 
-.mce-special {
-  position: absolute;
-  left: -5000px;
-  aria-hidden: true;
-}
+
 
 
 @keyframes App-logo-spin {

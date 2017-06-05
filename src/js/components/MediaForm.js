@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react'
-
+import SocialMedia from './SocialMedia'
 export default class MediaForm extends Component {
   render() {
       return(
@@ -16,7 +16,7 @@ export default class MediaForm extends Component {
              <div className="mce-special"><input type="text" name="b_cb31eb89d2773d05d965b8254_7b63ece6ae" tabIndex="-1" value=""/></div>
           </div>
           </form>
-          <div className="fb-like" data-href="http://healthcare4allny.org" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+          <SocialMedia />
       </div>
     )
   }
