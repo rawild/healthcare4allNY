@@ -62,11 +62,12 @@
   display: inline-block;
   height: 100px;
   vertical-align: 200%;
+  padding-left: 10px;
 }
 .interlude2 {
   font-size: 25pt;
   display: inline-block;
-  padding: 30px;
+  padding: 20px;
 }
 .mc-form {
   padding: 5px;
@@ -120,6 +121,7 @@ input::placeholder {
   border-color: #142c74;
   border-radius: 5px;
   font-size: 10pt;
+  margin-right: 10px;
 }
 
 .mce-special {
@@ -131,21 +133,24 @@ button:hover {
   opacity: .65;
 } 
 .social-media {
-  padding: 8px;
   float: right;
-  width: 210px;
+  width: 200px;
   height: 30px;
   display: inline;
   margin: 5px;
   vertical-align:top;
+  padding-top: 5px;
+  padding-right: 8px;
 }
 .fb-like {
   display:inline;
   float: left;
+  padding-top: 2px;
 }
 .twitter-share-button {
   display: inline;
   float: right;
+  
   
 }
 
