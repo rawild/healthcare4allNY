@@ -130,12 +130,25 @@ input::placeholder {
 button:hover {
   opacity: .65;
 } 
-.fb-like {
+.social-media {
   padding: 8px;
-  background-color: white;
-  float: left;
-  border-radius: 10px;
+  float: right;
+  width: 210px;
+  height: 30px;
+  display: inline;
+  margin: 5px;
+  vertical-align:top;
 }
+.fb-like {
+  display:inline;
+  float: left;
+}
+.twitter-share-button {
+  display: inline;
+  float: right;
+  
+}
+
 .button-primary {
   padding: 20px;
   font-size: 20pt;

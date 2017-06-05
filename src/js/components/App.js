@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Countdown from './Countdown'
 import './App.css';
 import MediaForm from './MediaForm'
-
+import SocialMedia from './SocialMedia'
 import { Textfit } from 'react-textfit';
 import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
 
@@ -18,7 +18,6 @@ class App extends Component {
       <div className="Section-1">
         <div className="starter">    
           We only have
-          
         </div>
         <Countdown targetDate={endDate}/>
         <div className="interlude1">
