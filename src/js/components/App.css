@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: #142c74;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .App-logo {
@@ -7,31 +12,37 @@
   height: 80px;
 }
 
-.App-header {
+.Section-1 {
   background-color: #142c74;
-  height: 800px;
+  color: white;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
-  color: white;
 }
 
-.App-torso {
-  background-color: rgb(180, 193, 232);
-  height: 500px;
+.Section-2 {
+  height: 400px;
+  background-color: white;
+  color: #142c74;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+.starter {
+  margin-top: 30px;
+  font-size: 25pt;
   padding: 20px;
-  color: black;
+  padding-left: 5%;
+  max-width: 80%;
+  width: 800px;
+  text-align: left;
 }
-
-.App-intro {
-  font-size: large;
-}
-
 .countdown{
   margin: auto;
   text-align: center;
   font-size: 100pt;
-  padding-bottom: 10px;
+  display: inline-block;
 }
 .time {
   margin: auto;
@@ -47,13 +58,70 @@
 .time-label {
   font-size: 15pt;
 }
-.interlude {
+.interlude1 {
   font-size: 25pt;
-  padding: 20px;
+  display: inline-block;
+  height: 100px;
+  vertical-align: 200%;
 }
-.title {
+.interlude2 {
+  font-size: 25pt;
+  display: inline-block;
+  padding: 30px;
+}
+.mc-form {
+  padding: 5px;
+  background-color: #09153b;
+  opacity: .75;
+  color: white;
+  width: 100%;
   margin-top: 10px;
+  position: fixed;
+  text-align: center;
+  
 }
+#mc_embed_signup_scroll {
+  display: inline;
+}
+.validate {
+  display: inline;
+  white-space: nowrap;
+}
+.mc-form-label {
+  font-size: 24px;
+  margin-right: 20px;
+  vertical-align: middle;
+  color: red;
+}
+input {
+  display: inline;
+  margin: 5px;  
+}
+input::placeholder {
+  color: rgb(88, 82, 59);
+  font-size: 12pt;
+}
+
+.required-email {
+  height: 15px;
+  width: 300px;
+  padding: 10px;
+  background-color: rgb(232, 171, 53);
+  color: #09153b;
+  border: none;
+  border-radius: 3px;
+}
+.mce-button {
+  background-color: white;
+  color: #142c74;
+  padding: 8px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #142c74;
+  border-radius: 5px;
+  font-size: 10pt;
+}
+
 button:hover {
   opacity: .65;
 } 
@@ -80,6 +148,11 @@ button:hover {
     height: 30px;
 }  
 
+.mce-special {
+  position: absolute;
+  left: -5000px;
+  aria-hidden: true;
+}
 
 
 @keyframes App-logo-spin {
