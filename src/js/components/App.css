@@ -21,13 +21,10 @@
 }
 
 .Section-2 {
-  height: 400px;
+  height: auto;
   background-color: white;
   color: #142c74;
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
 }
 .starter {
   margin-top: 30px;
@@ -184,7 +181,17 @@ button:hover {
 .CTA-title {
   font-size: 50pt;
 }
-
+.CTA-Targets {
+  display: inline-block;
+  width: 100%;
+}
+.target {
+  display: inline-block;
+  vertical-align: top;
+}
+.senator-label {
+  font-size: 30pt;
+}
 /* Begin Senator Profiles*/
 
 .senator {
@@ -196,6 +203,8 @@ button:hover {
   border-width: 4px;
   border-style: solid;
   border-color: #142c74;
+  display: inline-block;
+  margin: 5px;
 }
 .senator-title{
   text-align: center;
@@ -206,6 +215,7 @@ button:hover {
   margin: auto;
   margin-bottom: 30px;
   margin-top: 10px;
+  height: 200px;
 }
 .senator-explainer {
   margin-bottom: 10px;

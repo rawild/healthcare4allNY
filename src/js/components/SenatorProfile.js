@@ -9,10 +9,13 @@ export default class SenatorProfile extends Component {
   }
   
   render(props) {
-      return(
-        <div>
+      return(<div className="target">
+        <div className="senator-label">
+          {this.props.label}
+          </div>
           <div className="senator">
-            <div className="senator-title">Call {this.props.name}: {this.props.phone} </div>
+            <div className="senator-title">Call {this.props.name}: {this.props.phone} 
+            {this.props.title ? <div> {this.props.title} </div> : ""} </div>
             <img className="senator-picture" src={this.props.img}/>
             <div className="senator-explainer">
               {this.props.explainer}
@@ -26,16 +29,17 @@ export default class SenatorProfile extends Component {
               </div>
               : ""
               }
+              {this.props.twitter ?
               <div className="senator-twitter">
                 <button className="senator-twitter-button" onClick={() => {this._goto('https://twitter.com/intent/tweet?text=' + encodeURIComponent(this.props.twitter))}}>
-                <img src={Twitter}/><span className="senator-twitter-text"> @ him </span>
+                <img src={Twitter}/><span className="senator-twitter-text"> @ {this.props.him?'him':'her'} </span>
                 </button>
               </div>
+              : ""
+              }
             </div>
           </div>
-        </div>
-        
-        
+          </div>
         )
     }
     _goto = (url) => {
@@ -48,5 +52,7 @@ SenatorProfile.propTypes = {
   img: PropTypes.any,
   explainer: PropTypes.string,
   facebook: PropTypes.string,
-  twitter: PropTypes.string
+  twitter: PropTypes.string,
+  him: PropTypes.boolean,
+  letter: PropTypes.string
 }
