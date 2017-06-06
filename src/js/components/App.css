@@ -177,6 +177,21 @@ button:hover {
     height: 30px;
 }  
 
+.senator {
+  width: 300px;
+  text-align: left;
+}
+.senator-title{
+  text-align: center;
+}
+.senator-picture {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+.senator-explainer {
+  font-family: 'Acme', sans-serif;
+}
 
 
 

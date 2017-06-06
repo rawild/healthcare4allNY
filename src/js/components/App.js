@@ -3,6 +3,7 @@ import Countdown from './Countdown'
 import './App.css';
 import MediaForm from './MediaForm'
 import SocialMedia from './SocialMedia'
+import SenatorProfile from './SenatorProfile'
 import { Textfit } from 'react-textfit';
 import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
 
@@ -39,7 +40,9 @@ class App extends Component {
             <img className="icon" src={arrow} />
           </div>
         </button>
-        
+      </div>
+      <div className="Section-2">
+        <SenatorProfile />
       </div>
     </div>);
   }
