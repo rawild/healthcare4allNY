@@ -206,8 +206,11 @@ button:hover {
   display: inline-block;
   margin: 5px;
 }
-.senator-title{
+.senator-header {
   text-align: center;
+}
+.senator-name {
+  font-size: 20pt;
 }
 .senator-picture {
   border-radius: 20px;
@@ -264,5 +267,15 @@ button:hover {
   font-family: 'Acme', sans-serif;
 }
 
+/* Primer Info*/
+.footer {
+  padding: 5px;
+  background-color: #09153b;
+  opacity: .75;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 

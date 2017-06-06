@@ -33,6 +33,15 @@ class App extends Component {
             <b>Health Care for All NY</b>
           </Textfit>
         </div>
+        
+        <div className="interlude2">
+        To make this happen we have to act today! Follow the steps below.
+        </div>
+      </div>
+      <div className="Section-2">
+        <CalltoAction title="STEP 1 = Call + Tweet + Facebook"/>
+      </div>
+      <div className="footer">
         <button className="button-primary" onClick={() => {this._goto('http://passnyhealth.com')}}>
           <div className="button-children">
             Find out more 
@@ -41,9 +50,6 @@ class App extends Component {
             <img className="icon" src={arrow} />
           </div>
         </button>
-      </div>
-      <div className="Section-2">
-        <CalltoAction title="STEP 1 = 3 phone calls"/>
       </div>
     </div>);
   }

@@ -14,8 +14,15 @@ export default class SenatorProfile extends Component {
           {this.props.label}
           </div>
           <div className="senator">
-            <div className="senator-title">Call {this.props.name}: {this.props.phone} 
-            {this.props.title ? <div> {this.props.title} </div> : ""} </div>
+            <div className="senator-header">
+              <div className="senator-name">{this.props.name} 
+              </div>
+              <div className="senator-phone">{this.props.phone}
+              </div>
+              {this.props.title ? 
+                <div className="senator-title"> {this.props.title} </div> 
+                : ""}
+            </div>
             <img className="senator-picture" src={this.props.img}/>
             <div className="senator-explainer">
               {this.props.explainer}
