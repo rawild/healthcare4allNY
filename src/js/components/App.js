@@ -3,9 +3,10 @@ import Countdown from './Countdown'
 import './App.css';
 import MediaForm from './MediaForm'
 import SocialMedia from './SocialMedia'
-import SenatorProfile from './SenatorProfile'
+import CalltoAction from './CalltoAction'
 import { Textfit } from 'react-textfit';
 import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
+import Hannon from "../../img/Hannon.jpeg"
 
 class App extends Component {
   
@@ -42,7 +43,7 @@ class App extends Component {
         </button>
       </div>
       <div className="Section-2">
-        <SenatorProfile />
+        <CalltoAction title="STEP 1 = 3 phone calls"/>
       </div>
     </div>);
   }
