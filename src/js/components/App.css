@@ -302,6 +302,9 @@ button:hover {
   padding-bottom: 30px;
 }
 
+.embedded-cal {
+  padding: 20px;
+}
 
 #timely_slider {
   width: 90%;

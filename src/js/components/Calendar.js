@@ -12,7 +12,9 @@ export default class Calendar extends Component {
         <div className="subtitle">
           {this.props.subtitle}
         </div>
-        <div data-tockify-component="calendar" data-tockify-calendar="healthcare4allny"></div>
+        <div className="embedded-cal">
+          <div data-tockify-component="calendar" data-tockify-calendar="healthcare4allny"></div>
+        </div>
       </div>
     )
   }
