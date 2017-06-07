@@ -178,7 +178,7 @@ button:hover {
     height: 30px;
 }  
 /* Begin Call to Action */
-.CTA-title {
+.title {
   font-size: 50pt;
 }
 .CTA-Targets {
@@ -267,6 +267,28 @@ button:hover {
   font-family: 'Acme', sans-serif;
 }
 
+/* Calendar */
+.Calendar {
+  width: 100%;
+  background-color: rgba(224, 229, 233, 0.8);
+  margin-top: 10px;
+  padding: 20px;
+}
+
+
+#timely_slider {
+  width: 90%;
+  min-height: 300px;
+  max-height: 800px;
+  border: none;
+  border-radius: 10px;
+  margin-top: inherit;
+}
+
+
+
+
+
 /* Primer Info*/
 .footer {
   padding: 5px;
@@ -276,6 +298,7 @@ button:hover {
   width: 100%;
   margin-bottom: 10px;
   text-align: center;
+  
 }
 
 

@@ -4,6 +4,7 @@ import './App.css';
 import MediaForm from './MediaForm'
 import SocialMedia from './SocialMedia'
 import CalltoAction from './CalltoAction'
+import Calendar from './Calendar'
 import { Textfit } from 'react-textfit';
 import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
 import Hannon from "../../img/Hannon.jpeg"
@@ -40,6 +41,7 @@ class App extends Component {
       </div>
       <div className="Section-2">
         <CalltoAction title="STEP 1 = Call + Tweet + Facebook"/>
+        <Calendar title="STEP 2 = Join the movement"/>
       </div>
       <div className="footer">
         <button className="button-primary" onClick={() => {this._goto('http://passnyhealth.com')}}>

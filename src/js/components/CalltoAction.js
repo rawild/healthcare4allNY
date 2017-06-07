@@ -7,7 +7,7 @@ import Flanagan from "../../img/Flanagan.jpeg"
 export default class CalltoAction extends Component {
   render() {
     return(<div className="CalltoAction">
-      <div className="CTA-title">
+      <div className="title">
         {this.props.title}
       </div>
       <div className="CTA-Targets" >
