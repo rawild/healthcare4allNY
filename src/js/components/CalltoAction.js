@@ -10,6 +10,9 @@ export default class CalltoAction extends Component {
       <div className="title">
         {this.props.title}
       </div>
+      <div className="subtitle">
+        {this.props.subtitle}
+      </div>
       <div className="CTA-Targets" >
         <SenatorProfile name="Kemp Hannon"
           phone="518-455-2200"
@@ -44,5 +47,6 @@ export default class CalltoAction extends Component {
   }
 }
 CalltoAction.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 }

@@ -146,7 +146,13 @@ export default class Countdown extends Component {
     }
     return (
       <div className="countdown">
+        <div className="interlude1">    
+          We only <br/> have
+        </div>
         {this.renderRemainingTime()}
+        <div className="interlude1">
+            to get  
+        </div>
       </div>
     );
   }

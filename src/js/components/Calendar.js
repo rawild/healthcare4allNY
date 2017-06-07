@@ -8,6 +8,9 @@ export default class Calendar extends Component {
         <div className="title">
           {this.props.title}
         </div>
+        <div className="subtitle">
+          {this.props.subtitle}
+        </div>
           <iframe id="timely_slider" name="timely_slider" src="https://events.time.ly/8k8l26q?view=agenda" seamless noScroll></iframe>
       
       </div>
@@ -15,5 +18,6 @@ export default class Calendar extends Component {
   }
 }
 Calendar.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 }
