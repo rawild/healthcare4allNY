@@ -3,8 +3,13 @@ import Countdown from './Countdown'
 import './App.css';
 import MediaForm from './MediaForm'
 import SocialMedia from './SocialMedia'
+import CalltoAction from './CalltoAction'
+import Block from './Block'
+import Calendar from './Calendar'
+import Footer from './Footer'
 import { Textfit } from 'react-textfit';
-import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
+
+import Hannon from "../../img/Hannon.jpeg"
 
 class App extends Component {
   
@@ -16,35 +21,36 @@ class App extends Component {
     <div className="App">
       <MediaForm />
       <div className="Section-1">
-        <div className="starter">    
-          We only have
-        </div>
+      
         <Countdown targetDate={endDate}/>
-        <div className="interlude1">
-            to get  
-        </div>
+      
         <div className="interlude2">
         1 more Senator to sign on and a vote held for
         </div>
-        <div className="title">
+        <div >
           <Textfit mode="single">
             <b>Health Care for All NY</b>
           </Textfit>
         </div>
-        <button className="button-primary" onClick={() => {this._goto('http://passnyhealth.com')}}>
-          <div className="button-children">
-            Find out more 
-          </div>
-          <div className="button-children">
-            <img className="icon" src={arrow} />
-          </div>
-        </button>
-        
       </div>
+      <div className="Transition-1" >
+        <span className="interlude3">
+        What can you do?
+        </span>
+      </div>
+      <div className="Section-2">
+        <CalltoAction title="STEP 1" subtitle="Call + Tweet + Facebook"/>
+        <Block title="STEP 2" subtitle="Get all your friends to do it">
+          (It helps if you share our page)
+          <div>
+          <SocialMedia />
+          </div>
+        </Block>
+        
+        <Calendar title="STEP 3" subtitle="Join the movement"/>
+      </div>
+      <Footer />
     </div>);
-  }
-  _goto = (url) => {
-    window.location = url
   }
 }
 

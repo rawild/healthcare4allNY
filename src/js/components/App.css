@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: #142c74;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: block;
@@ -15,34 +15,33 @@
 .Section-1 {
   background-color: #142c74;
   color: white;
-  padding-left: 40px;
-  padding-right: 40px;
   padding-top: 40px;
+  width: 100%;
 }
-
+.Transition-1 {
+  height: auto;
+  width: 100%;
+  background-color: #09153b;
+  color: rgb(232, 171, 53);
+  vertical-align: bottom;
+  padding-top: 200px;
+  padding-bottom: 60px;
+}
 .Section-2 {
-  height: 400px;
+  height: auto;
   background-color: white;
   color: #142c74;
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
 }
-.starter {
-  margin-top: 30px;
-  font-size: 25pt;
-  padding: 20px;
-  padding-left: 5%;
-  max-width: 90%;
-  text-align: left;
-}
+
+/*   Countdown begin     */
 .countdown{
   margin: auto;
   text-align: center;
   font-size: 100pt;
   display: inline-block;
 }
+
 .time {
   margin: auto;
   background-color: #09153b;
@@ -63,19 +62,30 @@
   height: 100px;
   vertical-align: 200%;
   padding-left: 10px;
+  padding-right: 10px;
 }
 .interlude2 {
   font-size: 25pt;
   display: inline-block;
   padding: 20px;
 }
+
+.interlude3 {
+  font-size: 80pt;
+  height: 100%;
+  margin-top: 40%;
+}
+
+/* Mailchimp form header start */
+
 .mc-form {
   padding: 5px;
   background-color: #09153b;
   opacity: .75;
   color: white;
-  width: 100%;
+  width: 95%;
   margin-top: 10px;
+  margin-left: 2%;
   position: fixed;
   text-align: center;
   
@@ -85,8 +95,10 @@
 }
 .validate {
   display: inline;
-  white-space: nowrap;
   float: right;
+}
+.mc-form-label-wrap {
+  display: inline-block;
 }
 .mc-form-label {
   font-size: 24px;
@@ -96,7 +108,7 @@
 }
 input {
   display: inline;
-  margin: 5px;  
+  margin-left: 5px;  
 }
 input::placeholder {
   color: rgb(88, 82, 59);
@@ -121,7 +133,7 @@ input::placeholder {
   border-color: #142c74;
   border-radius: 5px;
   font-size: 10pt;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .mce-special {
@@ -129,30 +141,30 @@ input::placeholder {
   left: -5000px;
   aria-hidden: true;
 }
-button:hover {
-  opacity: .65;
-} 
+
+
+/* Social Media header start */
 .social-media {
-  float: right;
-  width: 200px;
-  height: 30px;
+  width: 218px;
   display: inline;
-  margin: 5px;
-  vertical-align:top;
-  padding-top: 5px;
+  margin: 10px;
   padding-right: 8px;
+  margin-top: 20px;
 }
 .fb-like {
   display:inline;
-  float: left;
-  padding-top: 2px;
 }
 .twitter-share-button {
   display: inline;
-  float: right;
-  
-  
+  margin-left: 3px;
+  vertical-align: bottom;
+  margin-top: 5px;
 }
+
+/* Button start */
+button:hover {
+  opacity: .65;
+} 
 
 .button-primary {
   padding: 20px;
@@ -176,11 +188,139 @@ button:hover {
     vertical-align: top;
     height: 30px;
 }  
-
-
-
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Begin Call to Action */
+.title {
+  font-size: 100pt;
+  margin-top: 50px;;
 }
+.subtitle {
+  font-size: 50pt;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.CTA-Targets {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.target {
+  display: inline-block;
+  vertical-align: top;
+}
+.senator-label {
+  font-size: 30pt;
+  margin-bottom: 30px;
+}
+/* Begin Senator Profiles*/
+
+.senator {
+  width: 300px;
+  text-align: left;
+  background-color: rgba(224, 229, 233, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #142c74;
+  display: inline-block;
+  margin: 5px;
+}
+.senator-header {
+  text-align: center;
+}
+.senator-name {
+  font-size: 20pt;
+}
+.senator-picture {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 200px;
+}
+.senator-explainer {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.senator-contact {
+  text-align: center;
+}
+.senator-fb {
+  display: inline;
+}
+.senator-twitter {
+  display: inline;
+}
+.senator-fb-img {
+  height: 50px;
+  width: 50px;
+}
+.senator-fb-button {
+  margin: 5px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  vertical-align: top;
+}
+.senator-twitter-button {
+  background-color: white;
+  border-width: 2px;
+  border-color: #1DA1F2;
+  border-radius: 10px;
+  border-style: solid;
+  width: 110px;
+  height: 60px;
+
+  
+}
+.senator-twitter-text {
+  font-family: 'Francois One', sans-serif;
+  font-size: 15px;
+  vertical-align: 90%;
+  color: #1DA1F2;
+  
+}
+
+.senator-explainer {
+  font-family: 'Acme', sans-serif;
+}
+
+/* Begin Block */
+.Block {
+  color: white;
+  background-color: #142c74;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Begin Calendar */
+.Calendar {
+  width: 100%;
+  background-color: rgba(224, 229, 233, 0.8);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+#timely_slider {
+  width: 90%;
+  min-height: 300px;
+  max-height: 800px;
+  border: none;
+  border-radius: 10px;
+  margin-top: inherit;
+}
+
+/* Primer Info*/
+.footer {
+  padding: 5px;
+  background-color: #09153b;
+  opacity: .75;
+  color: white;
+  width: 100%;
+  text-align: center;
+  
+}
+
+
