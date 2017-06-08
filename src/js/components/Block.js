@@ -1,8 +1,15 @@
 import React, {Component, PropTypes} from 'react';
 
 export default class Block extends Component {
+
   render() {
-    return(<div className="Block">
+    const STYLES = {
+      backgroundColor: this.props.backgroundColor,
+      color: 'white',
+      paddingTop: '60px',
+      paddingBottom: '60px'
+    }
+    return(<div className="Block" style={STYLES}>
       <div className="title">
         {this.props.title}
       </div>
@@ -16,5 +23,6 @@ export default class Block extends Component {
 Block.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
+  backgroundColor: PropTypes.string
 }

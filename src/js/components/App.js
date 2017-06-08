@@ -7,6 +7,7 @@ import CalltoAction from './CalltoAction'
 import Block from './Block'
 import Calendar from './Calendar'
 import Footer from './Footer'
+import Button from './Button'
 import { Textfit } from 'react-textfit';
 
 import Hannon from "../../img/Hannon.jpeg"
@@ -40,7 +41,7 @@ class App extends Component {
       </div>
       <div className="Section-2">
         <CalltoAction title="STEP 1" subtitle="Call + Tweet + Facebook"/>
-        <Block title="STEP 2" subtitle="Get all your friends to do it">
+        <Block title="STEP 2" subtitle="Get all your friends to do it" backgroundColor="#142c74">
           (It helps if you share our page)
           <div>
           <SocialMedia />
@@ -49,7 +50,19 @@ class App extends Component {
         
         <Calendar title="STEP 3" subtitle="Join the movement"/>
       </div>
+      <Block title="Learn More" backgroundColor="#464F6C">
+        <Button url='https://medium.com/@healthcare4allny/health-care-for-all-bill-in-new-york-approaches-majority-support-in-state-senate-9f1ced896208'>
+          A simple explainer
+        </Button>
+        <Button url='http://passnyhealth.com'> 
+          More info from our friends
+        </Button>
+        <Button url='http://www.nyhcampaign.org/'>
+          The group that got us where we are
+        </Button>
+      </Block>
       <Footer />
+      
     </div>);
   }
 }
