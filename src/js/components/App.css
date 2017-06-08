@@ -287,12 +287,7 @@ button:hover {
 }
 
 /* Begin Block */
-.Block {
-  color: white;
-  background-color: #142c74;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 
 /* Begin Calendar */
 .Calendar {
@@ -317,9 +312,8 @@ button:hover {
 
 /* Primer Info*/
 .footer {
-  padding: 5px;
-  background-color: #09153b;
-  opacity: .75;
+  padding: 10px;
+  background-color: #142c74;
   color: white;
   width: 100%;
   text-align: center;
