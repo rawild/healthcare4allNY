@@ -19,6 +19,15 @@ export default class Footer extends Component {
           <img className="icon" src={arrow} />
         </div>
       </button>
+      
+      <button className="button-primary" onClick={() => {this._goto('http://www.nyhcampaign.org/')}}>
+        <div className="button-children">
+          The group that got us to where we are
+        </div>
+        <div className="button-children">
+          <img className="icon" src={arrow} />
+        </div>
+      </button>
     
     </div>
     )

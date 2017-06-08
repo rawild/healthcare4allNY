@@ -6,7 +6,7 @@ export default class MediaForm extends Component {
         <div className="mc-form" id="mc_embed_signup">
          <form action="//healthcare4allny.us16.list-manage.com/subscribe/post?u=cb31eb89d2773d05d965b8254&amp;id=7b63ece6ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
             <div className="mc-form-label-wrap">
-            <span className="mc-form-label">Get updates in these last three crucial weeks:</span>
+            <span className="mc-form-label">Get updates in these last crucial weeks:</span>
             </div>
             <div id="mc_embed_signup_scroll">    
               <input type="email" placeholder="Email Address" name="EMAIL" className="required-email" id="mce-EMAIL" />

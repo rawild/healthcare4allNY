@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react'
 
 
 export default class Calendar extends Component {
+  
   render() {
     return(
       <div className="Calendar">
@@ -11,8 +12,9 @@ export default class Calendar extends Component {
         <div className="subtitle">
           {this.props.subtitle}
         </div>
-          <iframe id="timely_slider" name="timely_slider" src="https://events.time.ly/8k8l26q?view=agenda" seamless noScroll></iframe>
-      
+        <div className="embedded-cal">
+          <div data-tockify-component="calendar" data-tockify-calendar="healthcare4allny"></div>
+        </div>
       </div>
     )
   }
