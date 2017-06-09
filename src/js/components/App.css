@@ -34,6 +34,10 @@
   width: 100%;
 }
 
+.embedded-link {
+  color: inherit !important;
+}
+
 /*   Countdown begin     */
 .countdown{
   margin: auto;
@@ -197,6 +201,8 @@ button:hover {
   font-size: 50pt;
   margin-top: 20px;
   margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .CTA-Targets {
   display: inline-block;
@@ -310,9 +316,22 @@ button:hover {
   margin-top: inherit;
 }
 
+.blurb {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 15pt;
+}
+.highlight {
+  color: rgb(232, 171, 53);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20pt;
+}
+
 /* Primer Info*/
 .footer {
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #142c74;
   color: white;
   width: 100%;
