@@ -8,6 +8,8 @@ import Block from './Block'
 import Calendar from './Calendar'
 import Footer from './Footer'
 import Button from './Button'
+import Modal from './Modal'
+import OpenModal from '../containers/OpenModal'
 import { Textfit } from 'react-textfit';
 
 import Hannon from "../../img/Hannon.jpeg"
@@ -24,7 +26,8 @@ class App extends Component {
       <div className="Section-1">
       <div>
       <Textfit mode="single">
-        <b>Did you know:</b>
+        <b>One Week Left!</b><br/>
+        Let's make some Noise 
       </Textfit>
       </div>
         <Countdown targetDate={endDate}/>
@@ -80,7 +83,8 @@ class App extends Component {
         </Button>
       </Block>
       <Footer />
-      
+      <OpenModal />
+
     </div>);
   }
 }

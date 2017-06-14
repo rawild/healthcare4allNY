@@ -1,9 +1,7 @@
 let nextTodoId = 0
-export const addTodo = (text) => {
+export const openModal = () => {
   return {
-    type: 'ADD_TODO',
-    id: nextTodoId++,
-    text
+    type: 'OPEN_MODAL' 
   }
 }
 
@@ -14,9 +12,8 @@ export const setVisibilityFilter = (filter) => {
   }
 }
 
-export const toggleTodo = (id) => {
+export const closeModal = () => {
   return {
-    type: 'TOGGLE_TODO',
-    id
+    type: 'CLOSE_MODAL'
   }
 }
