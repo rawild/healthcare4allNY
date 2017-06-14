@@ -24,7 +24,8 @@ class App extends Component {
       <div className="Section-1">
       <div>
       <Textfit mode="single">
-        <b>Did you know:</b>
+        <b>Only 1 week Left</b><br/>
+        Let's make some Noise!
       </Textfit>
       </div>
         <Countdown targetDate={endDate}/>
