@@ -39,35 +39,7 @@
 }
 
 /*   Countdown begin     */
-.countdown{
-  margin: auto;
-  text-align: center;
-  font-size: 100pt;
-  display: inline-block;
-}
 
-.time {
-  margin: auto;
-  background-color: #09153b;
-  width: 160px;
-  height: 180px;
-  padding: 10px;
-  margin: 20px;
-  color: rgb(232, 171, 53);
-  border-radius: 10px;
-  display: inline-block;
-}
-.time-label {
-  font-size: 15pt;
-}
-.interlude1 {
-  font-size: 25pt;
-  display: inline-block;
-  height: 100px;
-  vertical-align: 200%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .interlude2 {
   font-size: 25pt;
   display: inline-block;
@@ -79,85 +51,13 @@
   height: 100%;
   margin-top: 40%;
 }
-
-/* Mailchimp form header start */
-
-.mc-form {
-  padding: 5px;
-  background-color: #09153b;
-  opacity: .75;
-  color: white;
-  width: 95%;
-  margin-top: 10px;
-  margin-left: 2%;
-  position: fixed;
-  text-align: center;
-  
-}
-#mc_embed_signup_scroll {
-  display: inline;
-}
-.validate {
-  display: inline;
-  float: right;
-}
-.mc-form-label-wrap {
-  display: inline-block;
-}
-.mc-form-label {
-  font-size: 24px;
-  margin-right: 20px;
-  vertical-align: middle;
-  color: red;
-}
-input {
-  display: inline;
-  margin-left: 5px;  
-}
-input::placeholder {
+input:placeholder {
   color: rgb(88, 82, 59);
   font-size: 12pt;
 }
 
-.required-email {
-  height: 15px;
-  width: 300px;
-  padding: 10px;
-  background-color: rgb(232, 171, 53);
-  color: #09153b;
-  border: none;
-  border-radius: 3px;
-}
-.mce-button {
-  background-color: white;
-  color: #142c74;
-  padding: 8px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #142c74;
-  border-radius: 5px;
-  font-size: 10pt;
-  margin-right: 20px;
-}
-
-.mce-special {
-  position: absolute;
-  left: -5000px;
-  aria-hidden: true;
-}
-
-
 /* Social Media header start */
-.social-media {
-  width: 218px;
-  display: inline;
-  margin: 10px;
-  padding-right: 8px;
-  margin-top: 20px;
-}
-.fb-like {
-  display:inline;
-}
+
 .twitter-share-button {
   display: inline;
   margin-left: 3px;
