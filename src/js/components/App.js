@@ -27,7 +27,7 @@ class App extends Component {
       <div>
       <Textfit mode="single">
         <b>One Week Left!</b><br/>
-        Let's make some Noise 
+        Make some noise
       </Textfit>
       </div>
         <Countdown targetDate={endDate}/>
@@ -54,8 +54,9 @@ class App extends Component {
           <SocialMedia />
           </div>
         </Block>
-        
-        <Calendar title="STEP 3" subtitle="Join the movement"/>
+        <Block title="STEP 3" subtitle="Join the movement" backgroundColor="rgba(224, 229, 233, 0.8)" color="#142c74">
+          <Calendar />
+        </Block>
       </div>
       <Block subtitle="How have I not heard about this?" backgroundColor="#09153b">
         <div className="blurb">

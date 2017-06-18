@@ -1,4 +1,5 @@
 import React,{PropTypes, Component} from 'react'
+import Radium from 'radium'
 import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
 const STYLES = {
   'buttonPrimary': {
@@ -11,7 +12,10 @@ const STYLES = {
     'marginTop': '30px',
     'transition': 'all 0.3s ease 0s',
     'opacity': '1',
-    'margin': '30px'
+    'margin': '30px',
+    ':hover': {
+      'opacity': '.65'
+    } 
   },
   'buttonChildren': {
     'display': 'inline-block'
@@ -22,7 +26,8 @@ const STYLES = {
       'height': '30px'
   }  
 }
-export default class Button extends Component {
+
+class Button extends Component {
   render(){
     return(<button className="button-primary" style={STYLES.buttonPrimary} onClick={() => {this._goto(this.props.url)}}>
         <div className="button-children" style={STYLES.buttonChildren}>
@@ -42,3 +47,4 @@ Button.propTypes = {
   children: PropTypes.any,
   url: PropTypes.string
 }
+export default Radium(Button)
