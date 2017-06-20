@@ -10,14 +10,14 @@ const STYLES = {
   'countdown': {
     'margin': 'auto',
     'textAlign': 'center',
-    'fontSize': '100pt',
+    'fontSize': '30pt',
     'display': 'inline-block'
   },
   'time': {
     'margin': 'auto',
     'background-color': '#09153b',
-    'width': '160px',
-    'height': '180px',
+    'width': '80px',
+    'height': '90px',
     'padding': '10px',
     'margin': '20px',
     'color': 'rgb(232, 171, 53)',
@@ -31,7 +31,6 @@ const STYLES = {
     'fontSize': '25pt',
     'display': 'inline-block',
     'height': '100px',
-    'verticalAlign': '200%',
     'paddingLeft': '10px',
     'paddingRight': '10px'
   },
@@ -188,11 +187,11 @@ export default class Countdown extends Component {
     return (
       <div className="countdown" style={STYLES.countdown}>
         <div className="interlude1" style={STYLES.interlude1}>    
-          We only <br/> have
+          With 
         </div>
         {this.renderRemainingTime()}
         <div className="interlude1" style={STYLES.interlude1}>
-            to get  
+            remaining in the 2017 <br/> senate Session
         </div>
       </div>
     );
