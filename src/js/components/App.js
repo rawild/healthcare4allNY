@@ -79,7 +79,7 @@ class App extends Component {
         </Button>
       </Block>
       <Footer />
-
+      <Modal />
     </div>);
   }
 }
