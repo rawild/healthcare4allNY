@@ -119,7 +119,7 @@ export default class Countdown extends Component {
           <span className="react-cntdwn-day" >
             {days}{timeSeparator}
             <div className="time-label" style={STYLES.timeLabel}>
-              Day
+              Days
             </div>
           </span>
         </div>
