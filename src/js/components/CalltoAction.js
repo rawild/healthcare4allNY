@@ -3,22 +3,39 @@ import SenatorProfile from './SenatorProfile'
 import Hannon from "../../img/Hannon.jpeg"
 import Young from "../../img/Young.jpeg"
 import Flanagan from "../../img/Flanagan.jpeg"
-
+const STYLES = {
+  'title': {
+    'fontSize': '100pt',
+    'marginTop': '50px'
+  },
+  'subtitle' : {
+    'fontSize': '50pt',
+    'marginTop': '20px',
+    'marginBottom': '50px',
+    'paddingLeft': '10px',
+    'paddingRight': '10px'
+  },
+  'ctaTargets': {
+    'display': 'inline-block',
+    'width': '100%',
+    'marginBottom': '60px'
+  }
+}
 export default class CalltoAction extends Component {
   render() {
     return(<div className="CalltoAction">
-      <div className="title">
+      <div className="title" style={STYLES.title}>
         {this.props.title}
       </div>
-      <div className="subtitle">
+      <div className="subtitle" style={STYLES.subtitle}>
         {this.props.subtitle}
       </div>
-      <div className="CTA-Targets" >
+      <div className="CTA-Targets" style={STYLES.ctaTargets}>
         <SenatorProfile name="Kemp Hannon"
           phone="518-455-2200"
           title="Chair of the Health Committee"
           img={Hannon} 
-          explainer="Tell him to bring the New York Health Act out of committee and onto the floor for a vote by the whole Senate. As a committee chair, he is responsible to all New Yorkers. "
+          explainer="Tell him to support the New York Health Act and bring it out of committee. As a committee chair, he is responsible to all New Yorkers. "
           facebook="https://www.facebook.com/kemp.hannon"
           twitter="@kemphannon Be a leader for NY support the #NYHealthAct and bring it out of the health committee!"
           him
