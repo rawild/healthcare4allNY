@@ -2,20 +2,113 @@ import React, {Component, PropTypes} from 'react'
 
 import FB from "../../img/FB-f-Logo__blue_50.png"
 import Twitter from "../../img/Twitter_Logo_Blue.png"
-
+const STYLES = {
+  'target': {
+    'display': 'inline-block',
+    'verticalAlign': 'top'
+  },
+  'senatorLabel': {
+    'fontSize': '30pt',
+    'marginBottom': '30px'
+  },
+  'senator': {
+    'width': '300px',
+    'textAlign': 'left',
+    'backgroundColor': 'rgba(224, 229, 233, 0.8)',
+    'borderRadius': '15px',
+    'padding': '20px',
+    'borderWidth': '4px',
+    'borderStyle': 'solid',
+    'borderColor': '#142c74',
+    'display': 'inline-block',
+    'margin': '5px'
+  },
+  'senatorHeader': {
+    'textAlign': 'center'
+  },
+  'senatorName': {
+    'fontSize': '20pt'
+  },
+  'senatorPicture': {
+    'borderRadius': '20px',
+    'display': 'block',
+    'margin': 'auto',
+    'marginBottom': '30px',
+    'marginTop': '10px',
+    'height': '200px'
+  },
+  'senatorExplainer': {
+    'marginBottom': '10px',
+    'padding': '10px',
+    'fontFamily': '\'Acme\', sans-serif'
+  },
+  'senatorContact': {
+    'textAlign': 'center'
+  },
+  'senatorFb': {
+    'display': 'inline'
+  },
+  'senatorTwitter': {
+    'display': 'inline'
+  },
+  'senatorFbImg': {
+    'height': '50px',
+    'width': '50px'
+  },
+  'senatorFbButton': {
+    'margin': '5px',
+    'padding': '0',
+    'border': 'none',
+    'borderRadius': '5px',
+    'verticalAlign': 'top'
+  },
+  'senatorTwitterButton': {
+    'backgroundColor': 'white',
+    'borderWidth': '2px',
+    'borderColor': '#1DA1F2',
+    'borderRadius': '10px',
+    'borderStyle': 'solid',
+    'width': '120px',
+    'height': '60px'
+    
+  },
+  'senatorTwitterText': {
+    'fontFamily': '\'Francois One\', sans-serif',
+    'fontSize': '15px',
+    'verticalAlign': '90%',
+    'color': '#1DA1F2'
+  },
+  'senatorPetitionButton': {
+    'backgroundColor': 'white',
+    'borderWidth': '2px',
+    'borderColor': 'black',
+    'borderRadius': '10px',
+    'borderStyle': 'solid',
+    'width': '80px',
+    'height': '40px',
+    'verticalAlign': '120%',
+    'marginLeft': '3px'
+  },
+  'senatorPetitionText': {
+    'fontFamily': '\'Francois One\', sans-serif',
+    'fontSize': '15px',
+    'color': 'black'
+  },
+  
+}
 export default class SenatorProfile extends Component {
   constructor(props) {
     super(props)
   }
   
   render(props) {
-      return(<div className="target">
-        <div className="senator-label">
+      return(<div className="target" style={STYLES.target}>
+        <div className="senator-label" style={STYLES.senatorLabel}>
           {this.props.label}
           </div>
-          <div className="senator">
-            <div className="senator-header">
-              <div className="senator-name">{this.props.name} 
+          <div className="senator" style={STYLES.senator}>
+            <div className="senator-header" style={STYLES.senatorHeader}>
+              <div className="senator-name" style={STYLES.senatorName}>{this.props.name} 
               </div>
               <div className="senator-phone">{this.props.phone}
               </div>
@@ -23,34 +116,41 @@ export default class SenatorProfile extends Component {
                 <div className="senator-title"> {this.props.title} </div> 
                 : ""}
             </div>
-            <img className="senator-picture" src={this.props.img}/>
-            <div className="senator-explainer">
+            <img className="senator-picture" style={STYLES.senatorPicture} src={this.props.img}/>
+            <div className="senator-explainer" style={STYLES.senatorExplainer}>
               {this.props.explainer}
             </div>
-            <div className="senator-contact">
+            <div className="senator-contact" style={STYLES.senatorContact}>
               {this.props.facebook ? 
-              <div className="senator-fb">
-                <button className="senator-fb-button" onClick={() => this._goto(this.props.facebook)}>
-                <img className="senator-fb-img" src={FB}/>
+              <div className="senator-fb" style={STYLES.senatorFb}>
+                <button className="senator-fb-button" style={STYLES.senatorFbButton} onClick={() => this._goto(this.props.facebook)}>
+                <img className="senator-fb-img" style={STYLES.senatorFbImg} src={FB}/>
                 </button>
               </div>
               : ""
               }
               {this.props.twitter ?
-              <div className="senator-twitter">
-                <button className="senator-twitter-button" onClick={() => {this._goto('https://twitter.com/intent/tweet?text=' + encodeURIComponent(this.props.twitter))}}>
-                <img src={Twitter}/><span className="senator-twitter-text"> @ {this.props.him?'him':'her'} </span>
+              <div className="senator-twitter" style={STYLES.senatorTwitter}>
+                <button className="senator-twitter-button" style={STYLES.senatorTwitterButton} onClick={() => {this._goto('https://twitter.com/intent/tweet?text=' + encodeURIComponent(this.props.twitter))}}>
+                <img src={Twitter}/><span className="senator-twitter-text" style={STYLES.senatorTwitterText}> @ {this.props.him?'him':'her'} </span>
                 </button>
               </div>
               : ""
               }
+              {this.props.petition ?
+              <div className="senator-petition" style={STYLES.senatorTwitter}>
+                <button className="senator-petition-button" style={STYLES.senatorPetitionButton} onClick={() => {this._goto(this.props.petition)}}>
+                <span className="senator-petition-text" style={STYLES.senatorPetitionText}> petition </span>
+                </button>
+              </div>
+              : ""}
             </div>
           </div>
           </div>
         )
     }
     _goto = (url) => {
-      window.location = url
+      window.open(url)
     }
 }
 SenatorProfile.propTypes = {
@@ -61,5 +161,6 @@ SenatorProfile.propTypes = {
   facebook: PropTypes.string,
   twitter: PropTypes.string,
   him: PropTypes.boolean,
-  letter: PropTypes.string
+  letter: PropTypes.string,
+  petition: PropTypes.string
 }

@@ -8,6 +8,8 @@ import Block from './Block'
 import Calendar from './Calendar'
 import Footer from './Footer'
 import Button from './Button'
+import Modal from './Modal'
+import OpenModal from '../containers/OpenModal'
 import { Textfit } from 'react-textfit';
 
 import Hannon from "../../img/Hannon.jpeg"
@@ -22,16 +24,10 @@ class App extends Component {
     <div className="App">
       <MediaForm />
       <div className="Section-1">
-      <div>
-      <Textfit mode="single">
-        <b>Only 1 week Left</b><br/>
-        Let's make some noise!
-      </Textfit>
-      </div>
         <Countdown targetDate={endDate}/>
       
         <div className="interlude2">
-        1 more Senator to sign on and a vote held for
+        The NY Senate has failed to schedule a vote on
         </div>
         <div >
           <Textfit mode="single">
@@ -41,6 +37,7 @@ class App extends Component {
       </div>
       <div className="Transition-1" >
         <span className="interlude3">
+        Disappointed? Pissed? <br/>
         What can you do?
         </span>
       </div>
@@ -52,8 +49,9 @@ class App extends Component {
           <SocialMedia />
           </div>
         </Block>
-        
-        <Calendar title="STEP 3" subtitle="Join the movement"/>
+        <Block title="STEP 3" subtitle="Join the strategizing"  backgroundColor="rgba(224, 229, 233, 0.8)" color="#142c74">
+          <Calendar />
+        </Block>
       </div>
       <Block subtitle="How have I not heard about this?" backgroundColor="#09153b">
         <div className="blurb">
@@ -81,7 +79,7 @@ class App extends Component {
         </Button>
       </Block>
       <Footer />
-      
+
     </div>);
   }
 }

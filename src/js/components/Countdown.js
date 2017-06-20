@@ -6,6 +6,46 @@ const NOT_STARTED = 1;
 const STARTED = 2;
 const FINISHED = 3;
 
+const STYLES = {
+  'countdown': {
+    'margin': 'auto',
+    'textAlign': 'center',
+    'fontSize': '30pt',
+    'display': 'inline-block'
+  },
+  'time': {
+    'margin': 'auto',
+    'background-color': '#09153b',
+    'width': '80px',
+    'height': '90px',
+    'padding': '10px',
+    'margin': '20px',
+    'color': 'rgb(232, 171, 53)',
+    'borderRadius': '10px',
+    'display': 'inline-block'
+  },
+  'timeLabel': {
+    'fontSize':'15pt'
+  },
+  'interlude1': {
+    'fontSize': '25pt',
+    'display': 'inline-block',
+    'height': '100px',
+    'paddingLeft': '10px',
+    'paddingRight': '10px'
+  },
+  'interlude2': {
+    'fontSize': '25pt',
+    'display': 'inline-block',
+    'padding': '20px'
+  },
+
+  'interlude3': {
+    'fontSize': '80pt',
+    'height': '100%',
+    'marginTop': '40%'
+  }
+}
 
 export default class Countdown extends Component {
   constructor(props) {
@@ -75,10 +115,10 @@ export default class Countdown extends Component {
         days = this.addLeadingZero(days)
       }
       html.push(
-        <div className="time">
+        <div className="time" style={STYLES.time}>
           <span className="react-cntdwn-day" >
             {days}{timeSeparator}
-            <div className="time-label">
+            <div className="time-label" style={STYLES.timeLabel}>
               Days
             </div>
           </span>
@@ -92,11 +132,11 @@ export default class Countdown extends Component {
         hours = this.addLeadingZero(hours)
       }
       html.push(
-        <div className="time">
+        <div className="time" style={STYLES.time}>
         <span className="react-cntdwn-hour" key="hour">
           {hours}{timeSeparator}
         </span>
-        <div className="time-label">
+        <div className="time-label" style={STYLES.timeLabel}>
           Hours
         </div>
         </div>
@@ -109,11 +149,11 @@ export default class Countdown extends Component {
         minutes = this.addLeadingZero(minutes)
       }
       html.push(
-        <div className="time">
+        <div className="time" style={STYLES.time}>
         <span className="react-cntdwn-minute" key="minute">
           {minutes}{timeSeparator}
         </span>
-        <div className="time-label">
+        <div className="time-label" style={STYLES.timeLabel}>
           Minutes
         </div>
         </div>
@@ -126,11 +166,11 @@ export default class Countdown extends Component {
         seconds = this.addLeadingZero(seconds)
       }
       html.push(
-        <div className="time">
+        <div className="time" style={STYLES.time}>
         <span className="react-cntdwn-second" key="second">
           {seconds}
         </span>
-        <div className="time-label">
+        <div className="time-label" style={STYLES.timeLabel}>
           Seconds
         </div>
         </div>
@@ -145,13 +185,13 @@ export default class Countdown extends Component {
       return <span></span>;
     }
     return (
-      <div className="countdown">
-        <div className="interlude1">    
-          We only <br/> have
+      <div className="countdown" style={STYLES.countdown}>
+        <div className="interlude1" style={STYLES.interlude1}>    
+          With 
         </div>
         {this.renderRemainingTime()}
-        <div className="interlude1">
-            to get  
+        <div className="interlude1" style={STYLES.interlude1}>
+            remaining in the 2017 <br/> senate Session
         </div>
       </div>
     );
