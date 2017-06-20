@@ -70,13 +70,31 @@ const STYLES = {
     'borderStyle': 'solid',
     'width': '120px',
     'height': '60px'
+    
   },
   'senatorTwitterText': {
     'fontFamily': '\'Francois One\', sans-serif',
     'fontSize': '15px',
     'verticalAlign': '90%',
     'color': '#1DA1F2'
-  }
+  },
+  'senatorPetitionButton': {
+    'backgroundColor': 'white',
+    'borderWidth': '2px',
+    'borderColor': 'black',
+    'borderRadius': '10px',
+    'borderStyle': 'solid',
+    'width': '80px',
+    'height': '40px',
+    'verticalAlign': '120%',
+    'marginLeft': '3px'
+  },
+  'senatorPetitionText': {
+    'fontFamily': '\'Francois One\', sans-serif',
+    'fontSize': '15px',
+    'color': 'black'
+  },
+  
 }
 export default class SenatorProfile extends Component {
   constructor(props) {
@@ -119,13 +137,20 @@ export default class SenatorProfile extends Component {
               </div>
               : ""
               }
+              {this.props.petition ?
+              <div className="senator-petition" style={STYLES.senatorTwitter}>
+                <button className="senator-petition-button" style={STYLES.senatorPetitionButton} onClick={() => {this._goto(this.props.petition)}}>
+                <span className="senator-petition-text" style={STYLES.senatorPetitionText}> petition </span>
+                </button>
+              </div>
+              : ""}
             </div>
           </div>
           </div>
         )
     }
     _goto = (url) => {
-      window.location = url
+      window.open(url)
     }
 }
 SenatorProfile.propTypes = {
@@ -136,5 +161,6 @@ SenatorProfile.propTypes = {
   facebook: PropTypes.string,
   twitter: PropTypes.string,
   him: PropTypes.boolean,
-  letter: PropTypes.string
+  letter: PropTypes.string,
+  petition: PropTypes.string
 }
