@@ -49,7 +49,7 @@ class App extends Component {
           <SocialMedia />
           </div>
         </Block>
-        <Block title="STEP 3" subtitle="Join the strategizing"  backgroundColor="rgba(224, 229, 233, 0.8)" color="#142c74">
+        <Block title="STEP 3" subtitle="Join the movement"  backgroundColor="rgba(224, 229, 233, 0.8)" color="#142c74">
           <Calendar />
         </Block>
       </div>
