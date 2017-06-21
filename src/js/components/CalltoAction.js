@@ -28,7 +28,7 @@ export default class CalltoAction extends Component {
     var HannonCallScript = () => { 
       return(<span>Hi, my name is ________ and I live in __________. <br /><br /> 
           I am calling because I am concerned about the future of our healthcare under the Trump administration. Millions of New Yorkers currently cannot access the healthcare they need simply because they cannot afford adequate health insurance. Under proposed Republican legislation to repeal the Affordable Care Act, millions more will lose coverage. <br/> <br/>
-          I urge Senator Kemp Hannon to support the New York Health Act - State Senate Bill S4840 and to pass it out of the Health Committee so that it can go to a vote as fast as possible next year. <br /> <br />
+          I urge Senator Kemp Hannon to support the New York Health Act - State Senate Bill S4840 and to pass it out of the Health Committee as soon as possible, even if that means a special session. <br /> <br />
           This bill will guarantee healthcare for all New Yorkers so that no resident will ever be denied care or face the threat of bankruptcy because of medical costs. <br /> <br />
           (If you feel comfortable you can share a personal reason why this is important to you) <br /> <br />
           I am very disappointed Senator Hannon not shown leadership on this issue and worked to bring the New York Health Act to a vote. <br /> <br />

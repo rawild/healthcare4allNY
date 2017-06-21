@@ -37,7 +37,7 @@ class App extends Component {
       </div>
       <div className="Transition-1" >
         <span className="interlude3">
-        Disappointed? Pissed? <br/>
+        <Textfit mode="single">Disappointed? </Textfit> Pissed? <br/>
         What can you do?
         </span>
       </div>
