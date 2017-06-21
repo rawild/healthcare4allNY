@@ -6,7 +6,7 @@ import './index.css';
 import { AppContainer } from 'react-hot-loader'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import todoApp from './js/reducers'
+import todoApp from './js/redux'
 let store = createStore(todoApp)
 const render = () => {
   ReactDOM.render(

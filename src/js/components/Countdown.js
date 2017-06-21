@@ -15,7 +15,7 @@ const STYLES = {
   },
   'time': {
     'margin': 'auto',
-    'background-color': '#09153b',
+    'backgroundColor': '#09153b',
     'width': '80px',
     'height': '90px',
     'padding': '10px',

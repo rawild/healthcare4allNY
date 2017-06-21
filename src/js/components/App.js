@@ -7,7 +7,7 @@ import CalltoAction from './CalltoAction'
 import Block from './Block'
 import Calendar from './Calendar'
 import Footer from './Footer'
-import Button from './Button'
+import LinkButton from './LinkButton'
 import Modal from './Modal'
 import OpenModal from '../containers/OpenModal'
 import { Textfit } from 'react-textfit';
@@ -63,23 +63,23 @@ class App extends Component {
           As a Bloomberg article <a className="embedded-link" href="https://www.bloomberg.com/view/articles/2017-05-30/states-where-single-payer-health-care-could-work-if-it-could-work-anywhere" >said recently</a> “Say what you want about single-payer advocates, but say this too: You can’t stop them with much less than a Howitzer.”
           </div>
         
-        <Button url='https://medium.com/@healthcare4allny/campaign-for-single-payer-in-new-york-why-havent-i-heard-of-this-cb6cf77eda8c'>
+        <LinkButton url='https://medium.com/@healthcare4allny/campaign-for-single-payer-in-new-york-why-havent-i-heard-of-this-cb6cf77eda8c'>
           Read More
-        </Button>
+        </LinkButton>
       </Block>
       <Block title="Learn More" backgroundColor="#464F6C">
-        <Button url='https://medium.com/@healthcare4allny/health-care-for-all-bill-in-new-york-approaches-majority-support-in-state-senate-9f1ced896208'>
+        <LinkButton url='https://medium.com/@healthcare4allny/health-care-for-all-bill-in-new-york-approaches-majority-support-in-state-senate-9f1ced896208'>
           A simple explainer
-        </Button>
-        <Button url='http://passnyhealth.com'> 
+        </LinkButton>
+        <LinkButton url='http://passnyhealth.com'> 
           More info from our friends
-        </Button>
-        <Button url='http://www.nyhcampaign.org/'>
+        </LinkButton>
+        <LinkButton url='http://www.nyhcampaign.org/'>
           The group that got us where we are
-        </Button>
+        </LinkButton>
       </Block>
       <Footer />
-
+      <Modal />
     </div>);
   }
 }

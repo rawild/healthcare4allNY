@@ -1,40 +1,53 @@
 import React,{PropTypes, Component} from 'react'
 import Radium from 'radium'
-import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
+import arrow_white from '../../img/arrow_white.svg'
+import arrow_blue from '../../img/arrow_blue.svg'
 const STYLES = {
-  'buttonPrimary': {
-    'padding': '20px',
-    'fontSize': '20pt',
-    'backgroundColor': '#09153b',
-    'color': 'white',
+  'button': {
+    'padding': '10px',
+    'fontSize': '15pt',
     'border': 'none',
-    'borderRadius': '10px',
+    'borderRadius': '5px',
     'marginTop': '30px',
     'transition': 'all 0.3s ease 0s',
     'opacity': '1',
-    'margin': '30px',
+    'margin': '20px',
     ':hover': {
       'opacity': '.65'
     } 
+  },
+  'buttonPrimary': {
+    'backgroundColor': '#09153b',
+    'color': 'white'
+  },
+  'buttonSecondary': {
+    backgroundColor: 'white',
+    color: '#09153b'
   },
   'buttonChildren': {
     'display': 'inline-block'
   },
   'icon': {
-      'paddingTop': '3px',
       'verticalAlign': 'top',
-      'height': '30px'
-  }  
+      'height': '30px',
+  } 
 }
 
 class Button extends Component {
+  constructor(props){
+    super(props)
+  }
+  
   render(){
-    return(<button className="button-primary" style={STYLES.buttonPrimary} onClick={() => {this._goto(this.props.url)}}>
-        <div className="button-children" style={STYLES.buttonChildren}>
+    return(<button style={this.props.style? this.props.style : Object.assign(STYLES.button, 
+      this.props.secondary ? STYLES.buttonSecondary : STYLES.buttonPrimary)} 
+      onClick={() => {this.props.onClick()}}>
+        <div style={STYLES.buttonChildren}>
           {this.props.children}
-        </div>
-        <div className="button-children" style={STYLES.buttonChildren}>
-          <img className="icon" src={arrow} style={STYLES.icon}/>
+        
+          <img  src={this.props.secondary ? arrow_blue: arrow_white} 
+          style={this.props.iconStyle ? this.props.iconStyle : STYLES.icon}/>
+        
         </div>
       </button>
     )
@@ -45,6 +58,9 @@ class Button extends Component {
 }
 Button.propTypes = {
   children: PropTypes.any,
-  url: PropTypes.string
+  onClick: PropTypes.function,
+  secondary: PropTypes.boolean,
+  style: PropTypes.object,
+  iconStyle: PropTypes.object
 }
 export default Radium(Button)
