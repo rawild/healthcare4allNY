@@ -23,7 +23,45 @@ const STYLES = {
   }
 }
 export default class CalltoAction extends Component {
+  
   render() {
+    var HannonCallScript = () => { 
+      return(<span>Hi, my name is ________ and I live in __________. <br /><br /> 
+          I am calling because I am concerned about the future of our healthcare under the Trump administration. Millions of New Yorkers currently cannot access the healthcare they need simply because they cannot afford adequate health insurance. Under proposed Republican legislation to repeal the Affordable Care Act, millions more will lose coverage. <br/> <br/>
+          I urge Senator Kemp Hannon to support the New York Health Act - State Senate Bill S4840 and to pass it out of the Health Committee so that it can go to a vote as fast as possible next year. <br /> <br />
+          This bill will guarantee healthcare for all New Yorkers so that no resident will ever be denied care or face the threat of bankruptcy because of medical costs. <br /> <br />
+          (If you feel comfortable you can share a personal reason why this is important to you) <br /> <br />
+          I am very disappointed Senator Hannon not shown leadership on this issue and worked to bring the New York Health Act to a vote. <br /> <br />
+          Thank you for your time.
+        </span>
+      )
+    }
+    
+    var FlanaganCallScript = () => {
+      return(<span>Hi, my name is __________ and I live in ____________. <br /> <br />
+          I am calling to urge Senator John Flanagan to support the New York Health Act - State Senate Bill S4840 and to work to bring it to a vote as soon as possible, even if that means a special session.<br /> <br /> 
+          Millions of New Yorkers currently cannot access the healthcare they need simply because they cannot afford adequate health insurance. Under proposed Republican legislation to repeal the Affordable Care Act, millions more will lose coverage.<br /> <br />
+          The New York Health Act will guarantee healthcare for all New Yorkers so that no resident will ever be denied care or face the threat of bankruptcy because of medical costs. <br /> <br /> 
+          (If you feel comfortable you can share a personal reason why this is important to you)<br /> <br /> 
+          I am very disappaointed that Senator Flanagan has failed to show leadership on this issue and did nothing to bring the New York Health Act to a vote this session.<br /> <br />
+          Thank you for your time.<br /> <br />
+        </span>
+      )
+    }
+    
+    var CuomoCallScript = () => {
+      return(<span>Hi, my name is __________ and I live in ____________. <br /> <br />
+          I am calling to urge Governor Andrew Cuomo to support the New York Health Act - State Senate Bill S4840 and to work to bring it to a vote as soon as possible, even if that means a special session.<br /> <br /> 
+          Millions of New Yorkers currently cannot access the healthcare they need simply because they cannot afford adequate health insurance. Under proposed Republican legislation to repeal the Affordable Care Act, millions more will lose coverage.<br /> <br />
+          The New York Health Act will guarantee healthcare for all New Yorkers so that no resident will ever be denied care or face the threat of bankruptcy because of medical costs. <br /> <br /> 
+          (If you feel comfortable you can share a personal reason why this is important to you)<br /> <br /> 
+          I am very disappaointed that Governor Cuomo has failed to show leadership on this issue and did nothing to bring the New York Health Act to a vote this session.<br /> <br />
+          Can we count on the Governor to sign the bill when it is passed?<br /> <br />
+          Thank you for your time.<br /> <br />
+        </span>
+      )
+    }
+    
     return(<div className="CalltoAction">
       <div className="title" style={STYLES.title}>
         {this.props.title}
@@ -40,7 +78,8 @@ export default class CalltoAction extends Component {
           facebook="https://www.facebook.com/kemp.hannon"
           twitter=".@kemphannon Why didn't you support the #NYHealthAct? Why didn't you schedule a vote on it? We need you to lead NY! #PassNYHealth"
           him
-          label="A"/>
+          label="A"
+          callScript={HannonCallScript()}/>
           <SenatorProfile name="John J. Flanagan"
               phone="518–455–2071"
               title="Senate Majority Leader"
@@ -50,6 +89,7 @@ export default class CalltoAction extends Component {
               twitter=".@LeaderFlanagan Why didn't you support the #NYHealthAct? Why didn't you schedule a vote on it? We're looking to you to lead. #PassNYHealth"
               him
               label="B"
+              callScript={FlanaganCallScript()}
             />
             <SenatorProfile name="Andrew Cuomo"
                 phone="518-474-8390"
@@ -61,6 +101,7 @@ export default class CalltoAction extends Component {
                 him
                 label="C"
                 petition="https://passnyhealth.com/"
+                callScript={CuomoCallScript()}
               />
         </div>
     </div>

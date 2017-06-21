@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import arrow from '../../img/ic_keyboard_arrow_right_black_24px.svg'
 export default class Footer extends Component {
   render(){
     const STYLES = {

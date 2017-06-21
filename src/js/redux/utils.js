@@ -22,7 +22,6 @@ import { connect as reduxConnect } from 'react-redux'
  */
 export function connect(params, wantedActions = []) {
   let wantedProps = params.props || params
-  console.log(wantedProps)
   if (!wantedProps.map && typeof wantedProps !== 'function') {
     wantedProps = []
   }
@@ -31,7 +30,6 @@ export function connect(params, wantedActions = []) {
   const mapStateToProps = (state, props) => {
     
     const getPropPair = (state, prop) => {
-      console.log(state)
       if (_.isString(prop)) {
         prop = prop.split('.')
       } 

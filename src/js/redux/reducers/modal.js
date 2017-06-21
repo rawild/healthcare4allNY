@@ -3,8 +3,7 @@ import { action } from './'
 
 
 export const open = action('modal', 'open', {
-  expectedParams: ['message', 'primaryActionText', 'callback',
-    'cancelActionText', 'style']
+  expectedParams: ['header','message', 'buttonActionText', 'style']
 })
 export const openModal = open
 export const close = action('modal', 'close', {
@@ -14,15 +13,13 @@ export const closeModal = close
 
 const initialState = Immutable.fromJS({
   open: false,
+  header: '',
   message: '',
-  primaryActionText: 'OK',
-  callback: null, // stores a global callback when OK is pressed
-  cancelActionText: '',
+  buttonActionText: '',
   style: {}
 })
 
 export default function reducer(state = initialState, action = {}) {
-  console.log('state: '+ state)
   switch (action.type) {
     case open.id:
       return state.merge({open: true, ...open.getParams(action)})
