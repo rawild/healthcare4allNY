@@ -24,10 +24,11 @@ class App extends Component {
     <div className="App">
       <MediaForm />
       <div className="Section-1">
-        <Countdown targetDate={endDate}/>
-      
         <div className="interlude2">
-        The NY Senate has failed to schedule a vote on
+        The NY senate session ended on July 21st. 
+        </div>
+        <div className="interlude2">
+        In that session they failed to schedule a vote on
         </div>
         <div >
           <Textfit mode="single">
@@ -37,7 +38,7 @@ class App extends Component {
       </div>
       <div className="Transition-1" >
         <span className="interlude3">
-        <Textfit mode="single">Disappointed? </Textfit> Pissed? <br/>
+        <Textfit mode="single">Disappointed? </Textfit> Pissed? (#PIISD)<br/>
         What can you do?
         </span>
       </div>
