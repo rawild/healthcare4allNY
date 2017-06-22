@@ -25,7 +25,7 @@ class App extends Component {
       <MediaForm />
       <div className="Section-1">
         <div className="interlude2">
-        The NY senate session ended on July 21st. 
+        The NY senate session for the year ended on June 21st, 2017. 
         </div>
         <div className="interlude2">
         In that session they failed to schedule a vote on
