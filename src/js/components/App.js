@@ -6,6 +6,7 @@ import SocialMedia from './SocialMedia'
 import CalltoAction from './CalltoAction'
 import Block from './Block'
 import Calendar from './Calendar'
+import EventSubmission from './EventSubmission'
 import Footer from './Footer'
 import LinkButton from './LinkButton'
 import Modal from './Modal'
@@ -52,6 +53,7 @@ class App extends Component {
         </Block>
         <Block title="STEP 3" subtitle="Join the movement"  backgroundColor="rgba(224, 229, 233, 0.8)" color="#142c74">
           <Calendar />
+          <EventSubmission />
         </Block>
       </div>
       <Block subtitle="How have I not heard about this?" backgroundColor="#09153b">
